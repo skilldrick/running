@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100801182920) do
+ActiveRecord::Schema.define(:version => 20100801205923) do
 
   create_table "runs", :force => true do |t|
     t.float    "distance"
@@ -17,6 +17,9 @@ ActiveRecord::Schema.define(:version => 20100801182920) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "run_id"
+    t.datetime "start_time"
+    t.integer  "duration"
+    t.integer  "calories"
   end
 
   add_index "runs", ["run_id"], :name => "index_runs_on_run_id", :unique => true

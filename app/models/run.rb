@@ -19,19 +19,20 @@ class Run < ActiveRecord::Base
     result
   end
 
-  def self.get_all_runs
-    
-    result = ''
-    open(all_runs_url) do |f|
-      doc = REXML::Document.new f.read
-      doc.elements.each("plusService/runList/run") do |run|
-        result << run.elements["distance"].text + "<br />"
-      end
-      result
-    end
+  def calculate_avg_pace
+    #avg_pace = distance / duration
   end
     
+
   def self.populate_runs
+    attributes = {
+     #:attr         #xml tagname
+      :distance   => "distance",
+      :start_time => "startTime",
+      :duration   => "duration",
+      :calories   => "calories"
+    }
+    
     all_runs_url = "http://nikerunning.nike.com/nikeplus/" +
       "v1/services/app/run_list.jsp?userID=#{@@user_id}"
     open(all_runs_url) do |f|
@@ -39,7 +40,10 @@ class Run < ActiveRecord::Base
       doc.elements.each("plusService/runList/run") do |run_info|
         run_id = run_info.attributes["id"]
         run = find_or_initialize_by_run_id(run_id)
-        run.distance = run_info.elements["distance"].text
+        attributes.each do |key, value|
+          run.write_attribute(key, run_info.elements[value].text)
+        end
+        run.calculate_avg_pace
         run.save
       end
     end
