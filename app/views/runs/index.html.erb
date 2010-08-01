@@ -12,11 +12,11 @@
 
 <% @runs.each do |run| %>
   <tr>
-    <td><%=h run.distance.to_s %></td>
+    <td><%=h run.distance_in_miles %></td>
     <td><%=h run.avg_pace %></td>
     <td><%=h run.run_id %></td>
     <td><%=h run.start_time %></td>
-    <td><%=h run.duration %></td>
+    <td><%=h run.duration_in_minutes %></td>
     <td><%=h run.calories %></td>
     <td><%= link_to 'Show', run %></td>
     <td><%= link_to 'Edit', edit_run_path(run) %></td>
