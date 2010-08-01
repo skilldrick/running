@@ -2,9 +2,8 @@ class RunsController < ApplicationController
   # GET /runs
   # GET /runs.xml
   def index
+    Run.populate_runs
     @runs = Run.all
-    @run = Run.get_run
-    @all_runs = Run.get_all_runs
 
     respond_to do |format|
       format.html # index.html.erb

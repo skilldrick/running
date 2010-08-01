@@ -1,12 +1,27 @@
 <plusService>
   <status>success</status>
   <runList endIndex="-1" startIndex="0">
-    <run id="2027893292" workoutType="standard">
-      <startTime>2008-05-27T20:03:56+00:59</startTime>
-      <distance>4.2328</distance>
-      <duration>1636000</duration>
-      <syncTime>2008-05-27T20:33:52+00:00</syncTime>
-      <calories>350.0</calories>
+    <run id="1752070113" workoutType="standard">
+      <startTime>2010-02-28T13:24:40+00:00</startTime>
+      <distance>6.264</distance>
+      <duration>4067000</duration>
+      <syncTime>2010-02-28T14:34:16+00:00</syncTime>
+      <calories>470.0</calories>
+      <name/>
+      <description/>
+      <howFelt>3</howFelt>
+      <weather>2</weather>
+      <terrain>1</terrain>
+      <intensity/>
+      <gpxId/>
+      <equipmentType>sportband</equipmentType>
+    </run>
+    <run id="208604032" workoutType="standard">
+      <startTime>2010-03-05T18:21:30+00:00</startTime>
+      <distance>0.3682</distance>
+      <duration>195000</duration>
+      <syncTime>2010-03-05T18:26:40+00:00</syncTime>
+      <calories>27.0</calories>
       <name/>
       <description/>
       <howFelt/>
@@ -16,12 +31,12 @@
       <gpxId/>
       <equipmentType>sportband</equipmentType>
     </run>
-    <run id="953893823" workoutType="standard">
-      <startTime>2008-06-02T20:45:02+00:59</startTime>
-      <distance>4.211</distance>
-      <duration>1531000</duration>
-      <syncTime>2008-06-04T19:14:59+00:00</syncTime>
-      <calories>349.0</calories>
+    <run id="1685061062" workoutType="standard">
+      <startTime>2010-03-05T19:08:14+00:00</startTime>
+      <distance>0.4256</distance>
+      <duration>280000</duration>
+      <syncTime>2010-03-05T19:13:43+00:00</syncTime>
+      <calories>31.0</calories>
       <name/>
       <description/>
       <howFelt/>
@@ -31,12 +46,12 @@
       <gpxId/>
       <equipmentType>sportband</equipmentType>
     </run>
-    <run id="741793323" workoutType="standard">
-      <startTime>2008-09-07T08:51:46+00:59</startTime>
-      <distance>2.8332</distance>
-      <duration>1492000</duration>
-      <syncTime>2008-09-07T08:21:38+00:00</syncTime>
-      <calories>234.0</calories>
+    <run id="544195253" workoutType="standard">
+      <startTime>2010-03-05T19:35:21+00:00</startTime>
+      <distance>0.9241</distance>
+      <duration>281000</duration>
+      <syncTime>2010-03-05T19:40:41+00:00</syncTime>
+      <calories>69.0</calories>
       <name/>
       <description/>
       <howFelt/>
@@ -46,12 +61,12 @@
       <gpxId/>
       <equipmentType>sportband</equipmentType>
     </run>
-    <run id="1211505962" workoutType="standard">
-      <startTime>2008-09-27T10:07:14+00:59</startTime>
-      <distance>3.002</distance>
-      <duration>1200000</duration>
-      <syncTime>2008-09-27T18:37:55+00:00</syncTime>
-      <calories>248.0</calories>
+    <run id="1349455087" workoutType="standard">
+      <startTime>2010-03-06T10:25:59+00:00</startTime>
+      <distance>0.7665</distance>
+      <duration>400000</duration>
+      <syncTime>2010-03-06T10:34:51+00:00</syncTime>
+      <calories>57.0</calories>
       <name/>
       <description/>
       <howFelt/>
@@ -61,12 +76,42 @@
       <gpxId/>
       <equipmentType>sportband</equipmentType>
     </run>
-    <run id="1144510204" workoutType="standard">
-      <startTime>2008-10-05T08:31:36+00:59</startTime>
-      <distance>3.2667</distance>
-      <duration>2497000</duration>
-      <syncTime>2008-10-05T10:11:18+00:00</syncTime>
-      <calories>270.0</calories>
+    <run id="678428168" workoutType="standard">
+      <startTime>2010-03-06T10:45:30+00:00</startTime>
+      <distance>5.8997</distance>
+      <duration>2404000</duration>
+      <syncTime>2010-03-06T11:47:16+00:00</syncTime>
+      <calories>443.0</calories>
+      <name/>
+      <description/>
+      <howFelt>1</howFelt>
+      <weather>2</weather>
+      <terrain>1</terrain>
+      <intensity/>
+      <gpxId/>
+      <equipmentType>sportband</equipmentType>
+    </run>
+    <run id="1819232783" workoutType="standard">
+      <startTime>2010-03-09T17:51:45+00:00</startTime>
+      <distance>5.8593</distance>
+      <duration>2462000</duration>
+      <syncTime>2010-03-09T18:33:18+00:00</syncTime>
+      <calories>440.0</calories>
+      <name/>
+      <description/>
+      <howFelt>2</howFelt>
+      <weather>2</weather>
+      <terrain>1</terrain>
+      <intensity/>
+      <gpxId/>
+      <equipmentType>sportband</equipmentType>
+    </run>
+    <run id="2087563308" workoutType="standard">
+      <startTime>2010-03-10T13:03:08+00:00</startTime>
+      <distance>5.259</distance>
+      <duration>2418000</duration>
+      <syncTime>2010-03-11T08:28:51+00:00</syncTime>
+      <calories>395.0</calories>
       <name/>
       <description/>
       <howFelt/>
@@ -76,383 +121,26 @@
       <gpxId/>
       <equipmentType>sportband</equipmentType>
     </run>
-    <run id="1009928289" workoutType="standard">
-      <startTime>2008-11-06T19:28:31+00:00</startTime>
-      <distance>4.532</distance>
-      <duration>1531000</duration>
-      <syncTime>2008-11-08T17:25:49+00:00</syncTime>
-      <calories>375.0</calories>
+    <run id="7192418" workoutType="standard">
+      <startTime>2010-03-12T19:11:23+00:00</startTime>
+      <distance>9.4616</distance>
+      <duration>4485000</duration>
+      <syncTime>2010-03-12T20:27:27+00:00</syncTime>
+      <calories>711.0</calories>
       <name/>
       <description/>
-      <howFelt/>
-      <weather/>
-      <terrain/>
+      <howFelt>3</howFelt>
+      <weather>2</weather>
+      <terrain>1</terrain>
       <intensity/>
       <gpxId/>
       <equipmentType>sportband</equipmentType>
     </run>
-    <run id="1546870430" workoutType="standard">
-      <startTime>2008-11-18T19:34:40+00:00</startTime>
-      <distance>7.0303</distance>
-      <duration>3010000</duration>
-      <syncTime>2008-11-18T21:04:17+00:00</syncTime>
-      <calories>582.0</calories>
-      <name/>
-      <description/>
-      <howFelt/>
-      <weather/>
-      <terrain/>
-      <intensity/>
-      <gpxId/>
-      <equipmentType>sportband</equipmentType>
-    </run>
-    <run id="1747959437" workoutType="standard">
-      <startTime>2008-11-29T09:47:52+00:00</startTime>
-      <distance>0.1644</distance>
-      <duration>73000</duration>
-      <syncTime>2008-12-07T20:59:43+00:00</syncTime>
-      <calories>13.0</calories>
-      <name/>
-      <description/>
-      <howFelt/>
-      <weather/>
-      <terrain/>
-      <intensity/>
-      <gpxId/>
-      <equipmentType>sportband</equipmentType>
-    </run>
-    <run id="607117158" workoutType="standard">
-      <startTime>2008-11-29T10:04:45+00:00</startTime>
-      <distance>0.3057</distance>
-      <duration>97000</duration>
-      <syncTime>2008-12-07T20:59:45+00:00</syncTime>
-      <calories>25.0</calories>
-      <name/>
-      <description/>
-      <howFelt/>
-      <weather/>
-      <terrain/>
-      <intensity/>
-      <gpxId/>
-      <equipmentType>sportband</equipmentType>
-    </run>
-    <run id="1949178929" workoutType="standard">
-      <startTime>2008-11-29T10:12:23+00:00</startTime>
-      <distance>3.5715</distance>
-      <duration>1226000</duration>
-      <syncTime>2008-12-07T20:59:46+00:00</syncTime>
-      <calories>296.0</calories>
-      <name/>
-      <description/>
-      <howFelt/>
-      <weather/>
-      <terrain/>
-      <intensity/>
-      <gpxId/>
-      <equipmentType>sportband</equipmentType>
-    </run>
-    <run id="1747949083" workoutType="standard">
-      <startTime>2008-12-07T07:45:23+00:00</startTime>
-      <distance>11.9972</distance>
-      <duration>4274000</duration>
-      <syncTime>2008-12-07T20:59:46+00:00</syncTime>
-      <calories>994.0</calories>
-      <name/>
-      <description/>
-      <howFelt/>
-      <weather/>
-      <terrain/>
-      <intensity/>
-      <gpxId/>
-      <equipmentType>sportband</equipmentType>
-    </run>
-    <run id="2864442" workoutType="standard">
-      <startTime>2008-12-25T09:17:48+00:00</startTime>
-      <distance>7.9721</distance>
-      <duration>2875000</duration>
-      <syncTime>2008-12-29T22:08:22+00:00</syncTime>
-      <calories>660.0</calories>
-      <name/>
-      <description/>
-      <howFelt/>
-      <weather/>
-      <terrain/>
-      <intensity/>
-      <gpxId/>
-      <equipmentType>sportband</equipmentType>
-    </run>
-    <run id="673941677" workoutType="standard">
-      <startTime>2009-01-04T08:39:59+00:00</startTime>
-      <distance>14.9796</distance>
-      <duration>4409000</duration>
-      <syncTime>2009-01-04T12:26:34+00:00</syncTime>
-      <calories>1241.0</calories>
-      <name/>
-      <description/>
-      <howFelt/>
-      <weather/>
-      <terrain/>
-      <intensity/>
-      <gpxId/>
-      <equipmentType>sportband</equipmentType>
-    </run>
-    <run id="338316764" workoutType="standard">
-      <startTime>2009-01-08T07:14:52+00:00</startTime>
-      <distance>18.5811</distance>
-      <duration>5376000</duration>
-      <syncTime>2009-01-11T09:32:48+00:00</syncTime>
-      <calories>1540.0</calories>
-      <name>
-        <![CDATA[Thursday AM, Run to work]]>
-      </name>
-      <description>
-        <![CDATA[Thursday AM, Run to work]]>
-      </description>
-      <howFelt/>
-      <weather/>
-      <terrain/>
-      <intensity/>
-      <gpxId/>
-      <equipmentType>sportband</equipmentType>
-    </run>
-    <run id="1143614277" workoutType="standard">
-      <startTime>2009-01-11T08:35:06+00:00</startTime>
-      <distance>7.7819</distance>
-      <duration>2388000</duration>
-      <syncTime>2009-01-11T09:32:48+00:00</syncTime>
-      <calories>645.0</calories>
-      <name/>
-      <description/>
-      <howFelt/>
-      <weather/>
-      <terrain/>
-      <intensity/>
-      <gpxId/>
-      <equipmentType>sportband</equipmentType>
-    </run>
-    <run id="1076588461" workoutType="standard">
-      <startTime>2009-01-13T19:15:42+00:00</startTime>
-      <distance>8.1081</distance>
-      <duration>2304000</duration>
-      <syncTime>2009-01-13T22:41:22+00:00</syncTime>
-      <calories>672.0</calories>
-      <name>
-        <![CDATA[Tues night running club, 6 x 800m]]>
-      </name>
-      <description>
-        <![CDATA[Tues night running club, 6 x 800m]]>
-      </description>
-      <howFelt/>
-      <weather/>
-      <terrain/>
-      <intensity/>
-      <gpxId/>
-      <equipmentType>sportband</equipmentType>
-    </run>
-    <run id="1613461632" workoutType="standard">
-      <startTime>2009-01-15T07:17:50+00:00</startTime>
-      <distance>18.3837</distance>
-      <duration>5580000</duration>
-      <syncTime>2009-01-18T14:50:53+00:00</syncTime>
-      <calories>1523.0</calories>
-      <name>
-        <![CDATA[Thursday AM, Run to Work]]>
-      </name>
-      <description>
-        <![CDATA[Thursday AM, Run to Work]]>
-      </description>
-      <howFelt/>
-      <weather/>
-      <terrain/>
-      <intensity/>
-      <gpxId/>
-      <equipmentType>sportband</equipmentType>
-    </run>
-    <run id="1411967596" workoutType="standard">
-      <startTime>2009-01-18T15:49:22+00:00</startTime>
-      <distance>5.7622</distance>
-      <duration>2343000</duration>
-      <syncTime>2009-01-18T20:47:54+00:00</syncTime>
-      <calories>477.0</calories>
-      <name/>
-      <description/>
-      <howFelt/>
-      <weather/>
-      <terrain/>
-      <intensity/>
-      <gpxId/>
-      <equipmentType>sportband</equipmentType>
-    </run>
-    <run id="1076405728" workoutType="standard">
-      <startTime>2009-01-29T07:26:30+00:00</startTime>
-      <distance>18.8589</distance>
-      <duration>5189000</duration>
-      <syncTime>2009-01-29T21:40:42+00:00</syncTime>
-      <calories>1563.0</calories>
-      <name/>
-      <description/>
-      <howFelt/>
-      <weather/>
-      <terrain/>
-      <intensity/>
-      <gpxId/>
-      <equipmentType>sportband</equipmentType>
-    </run>
-    <run id="808019914" workoutType="standard">
-      <startTime>2009-01-31T09:41:35+00:00</startTime>
-      <distance>2.6488</distance>
-      <duration>1130000</duration>
-      <syncTime>2009-02-15T16:54:15+00:00</syncTime>
-      <calories>219.0</calories>
-      <name/>
-      <description/>
-      <howFelt/>
-      <weather/>
-      <terrain/>
-      <intensity/>
-      <gpxId/>
-      <equipmentType>sportband</equipmentType>
-    </run>
-    <run id="271123056" workoutType="standard">
-      <startTime>2009-01-31T10:11:50+00:00</startTime>
-      <distance>4.3837</distance>
-      <duration>1203000</duration>
-      <syncTime>2009-02-15T16:54:15+00:00</syncTime>
-      <calories>363.0</calories>
-      <name/>
-      <description/>
-      <howFelt/>
-      <weather/>
-      <terrain/>
-      <intensity/>
-      <gpxId/>
-      <equipmentType>sportband</equipmentType>
-    </run>
-    <run id="472480643" workoutType="standard">
-      <startTime>2009-02-14T09:08:17+00:00</startTime>
-      <distance>8.8073</distance>
-      <duration>2540000</duration>
-      <syncTime>2009-02-15T16:54:16+00:00</syncTime>
-      <calories>730.0</calories>
-      <name/>
-      <description/>
-      <howFelt/>
-      <weather/>
-      <terrain/>
-      <intensity/>
-      <gpxId/>
-      <equipmentType>sportband</equipmentType>
-    </run>
-    <run id="942235505" workoutType="standard">
-      <startTime>2009-02-15T07:24:07+00:00</startTime>
-      <distance>23.2304</distance>
-      <duration>6725000</duration>
-      <syncTime>2009-02-15T16:54:16+00:00</syncTime>
-      <calories>1925.0</calories>
-      <name/>
-      <description/>
-      <howFelt/>
-      <weather/>
-      <terrain/>
-      <intensity/>
-      <gpxId/>
-      <equipmentType>sportband</equipmentType>
-    </run>
-    <run id="271046624" workoutType="standard">
-      <startTime>2009-02-17T19:17:35+00:00</startTime>
-      <distance>9.4</distance>
-      <duration>4998000</duration>
-      <syncTime>2009-02-26T22:17:12+00:00</syncTime>
-      <calories>779.0</calories>
-      <name/>
-      <description/>
-      <howFelt/>
-      <weather/>
-      <terrain/>
-      <intensity/>
-      <gpxId/>
-      <equipmentType>sportband</equipmentType>
-    </run>
-    <run id="874974323" workoutType="standard">
-      <startTime>2009-02-19T07:22:05+00:00</startTime>
-      <distance>15.2401</distance>
-      <duration>5561000</duration>
-      <syncTime>2009-02-26T22:17:13+00:00</syncTime>
-      <calories>1263.0</calories>
-      <name/>
-      <description/>
-      <howFelt/>
-      <weather/>
-      <terrain/>
-      <intensity/>
-      <gpxId/>
-      <equipmentType>sportband</equipmentType>
-    </run>
-    <run id="1747426024" workoutType="standard">
-      <startTime>2009-02-24T19:14:55+00:00</startTime>
-      <distance>12.2689</distance>
-      <duration>4584000</duration>
-      <syncTime>2009-02-26T22:17:14+00:00</syncTime>
-      <calories>1017.0</calories>
-      <name/>
-      <description/>
-      <howFelt/>
-      <weather/>
-      <terrain/>
-      <intensity/>
-      <gpxId/>
-      <equipmentType>sportband</equipmentType>
-    </run>
-    <run id="1881643752" workoutType="standard">
-      <startTime>2009-02-26T07:28:57+00:00</startTime>
-      <distance>15.7697</distance>
-      <duration>5799000</duration>
-      <syncTime>2009-02-26T22:17:15+00:00</syncTime>
-      <calories>1307.0</calories>
-      <name/>
-      <description/>
-      <howFelt/>
-      <weather/>
-      <terrain/>
-      <intensity/>
-      <gpxId/>
-      <equipmentType>sportband</equipmentType>
-    </run>
-    <run id="2015440938" workoutType="standard">
-      <startTime>2009-03-08T10:32:00+00:00</startTime>
-      <distance>16.857</distance>
-      <duration>5527000</duration>
-      <syncTime>2009-03-17T23:06:28+00:00</syncTime>
-      <calories>1397.0</calories>
-      <name/>
-      <description/>
-      <howFelt/>
-      <weather/>
-      <terrain/>
-      <intensity/>
-      <gpxId/>
-      <equipmentType>sportband</equipmentType>
-    </run>
-    <run id="941525473" workoutType="standard">
-      <startTime>2009-03-18T07:15:22+00:00</startTime>
-      <distance>28.9441</distance>
-      <duration>8409000</duration>
-      <syncTime>2009-03-22T20:20:23+00:00</syncTime>
-      <calories>2399.0</calories>
-      <name/>
-      <description/>
-      <howFelt/>
-      <weather/>
-      <terrain/>
-      <intensity/>
-      <gpxId/>
-      <equipmentType>sportband</equipmentType>
-    </run>
-    <run id="1075925833" workoutType="standard">
-      <startTime>2009-03-21T10:10:34+00:00</startTime>
-      <distance>4.6995</distance>
-      <duration>1180000</duration>
-      <syncTime>2009-03-22T20:20:24+00:00</syncTime>
+    <run id="141179075" workoutType="standard">
+      <startTime>2010-03-17T13:01:35+00:00</startTime>
+      <distance>5.1825</distance>
+      <duration>2159000</duration>
+      <syncTime>2010-03-20T13:05:11+00:00</syncTime>
       <calories>389.0</calories>
       <name/>
       <description/>
@@ -463,12 +151,87 @@
       <gpxId/>
       <equipmentType>sportband</equipmentType>
     </run>
-    <run id="1679900845" workoutType="standard">
-      <startTime>2009-03-22T07:05:54+00:00</startTime>
-      <distance>27.9377</distance>
-      <duration>11150000</duration>
-      <syncTime>2009-03-22T20:20:26+00:00</syncTime>
-      <calories>2315.0</calories>
+    <run id="7167607" workoutType="standard">
+      <startTime>2010-03-20T10:20:28+00:00</startTime>
+      <distance>5.959</distance>
+      <duration>2433000</duration>
+      <syncTime>2010-03-20T13:05:12+00:00</syncTime>
+      <calories>448.0</calories>
+      <name/>
+      <description/>
+      <howFelt>2</howFelt>
+      <weather>2</weather>
+      <terrain>1</terrain>
+      <intensity/>
+      <gpxId/>
+      <equipmentType>sportband</equipmentType>
+    </run>
+    <run id="141028227" workoutType="standard">
+      <startTime>2010-04-06T18:15:42+01:00</startTime>
+      <distance>5.8786</distance>
+      <duration>2486000</duration>
+      <syncTime>2010-04-06T17:58:22+00:00</syncTime>
+      <calories>441.0</calories>
+      <name/>
+      <description/>
+      <howFelt>1</howFelt>
+      <weather>2</weather>
+      <terrain>1</terrain>
+      <intensity/>
+      <gpxId/>
+      <equipmentType>sportband</equipmentType>
+    </run>
+    <run id="1751509066" workoutType="standard">
+      <startTime>2010-04-08T18:23:54+01:00</startTime>
+      <distance>5.8079</distance>
+      <duration>2464000</duration>
+      <syncTime>2010-04-11T18:33:55+00:00</syncTime>
+      <calories>436.0</calories>
+      <name/>
+      <description/>
+      <howFelt>1</howFelt>
+      <weather>1</weather>
+      <terrain>1</terrain>
+      <intensity/>
+      <gpxId/>
+      <equipmentType>sportband</equipmentType>
+    </run>
+    <run id="275057215" workoutType="standard">
+      <startTime>2010-04-10T13:31:54+01:00</startTime>
+      <distance>2.8355</distance>
+      <duration>1175000</duration>
+      <syncTime>2010-04-11T18:33:56+00:00</syncTime>
+      <calories>213.0</calories>
+      <name/>
+      <description/>
+      <howFelt>1</howFelt>
+      <weather>1</weather>
+      <terrain>1</terrain>
+      <intensity/>
+      <gpxId/>
+      <equipmentType>sportband</equipmentType>
+    </run>
+    <run id="1818395901" workoutType="standard">
+      <startTime>2010-04-12T18:13:15+01:00</startTime>
+      <distance>8.6816</distance>
+      <duration>3944000</duration>
+      <syncTime>2010-04-12T18:53:00+00:00</syncTime>
+      <calories>652.0</calories>
+      <name/>
+      <description/>
+      <howFelt>1</howFelt>
+      <weather>1</weather>
+      <terrain>1</terrain>
+      <intensity/>
+      <gpxId/>
+      <equipmentType>sportband</equipmentType>
+    </run>
+    <run id="1281505867" workoutType="standard">
+      <startTime>2010-04-13T17:58:15+01:00</startTime>
+      <distance>5.8494</distance>
+      <duration>2440000</duration>
+      <syncTime>2010-04-15T17:04:30+00:00</syncTime>
+      <calories>439.0</calories>
       <name/>
       <description/>
       <howFelt/>
@@ -478,12 +241,87 @@
       <gpxId/>
       <equipmentType>sportband</equipmentType>
     </run>
-    <run id="1612679802" workoutType="standard">
-      <startTime>2009-03-29T08:13:36+00:59</startTime>
-      <distance>29.616</distance>
-      <duration>10890000</duration>
-      <syncTime>2009-03-29T16:57:31+00:00</syncTime>
-      <calories>2455.0</calories>
+    <run id="1147335356" workoutType="standard">
+      <startTime>2010-04-15T18:14:45+01:00</startTime>
+      <distance>8.6772</distance>
+      <duration>3472000</duration>
+      <syncTime>2010-04-15T19:00:34+00:00</syncTime>
+      <calories>652.0</calories>
+      <name/>
+      <description/>
+      <howFelt>1</howFelt>
+      <weather>1</weather>
+      <terrain>1</terrain>
+      <intensity/>
+      <gpxId/>
+      <equipmentType>sportband</equipmentType>
+    </run>
+    <run id="341071908" workoutType="standard">
+      <startTime>2010-06-07T18:50:33+00:00</startTime>
+      <distance>5.97009</distance>
+      <duration>2831000</duration>
+      <syncTime>2010-06-07T18:47:20+00:00</syncTime>
+      <calories>449.0</calories>
+      <name/>
+      <description/>
+      <howFelt>2</howFelt>
+      <weather>3</weather>
+      <terrain>1</terrain>
+      <intensity/>
+      <gpxId/>
+      <equipmentType>sportband</equipmentType>
+    </run>
+    <run id="1146272955" workoutType="standard">
+      <startTime>2010-06-12T12:55:12+00:00</startTime>
+      <distance>5.8685</distance>
+      <duration>2511000</duration>
+      <syncTime>2010-06-12T12:38:57+00:00</syncTime>
+      <calories>441.0</calories>
+      <name/>
+      <description/>
+      <howFelt>1</howFelt>
+      <weather>1</weather>
+      <terrain>1</terrain>
+      <intensity/>
+      <gpxId/>
+      <equipmentType>sportband</equipmentType>
+    </run>
+    <run id="1213435073" workoutType="standard">
+      <startTime>2010-06-14T18:36:11+00:00</startTime>
+      <distance>8.43382</distance>
+      <duration>3800000</duration>
+      <syncTime>2010-06-16T22:46:30+00:00</syncTime>
+      <calories>634.0</calories>
+      <name/>
+      <description/>
+      <howFelt>1</howFelt>
+      <weather>1</weather>
+      <terrain>2</terrain>
+      <intensity/>
+      <gpxId/>
+      <equipmentType>sportband</equipmentType>
+    </run>
+    <run id="609433028" workoutType="standard">
+      <startTime>2010-06-16T13:03:40+00:00</startTime>
+      <distance>5.15451</distance>
+      <duration>2546000</duration>
+      <syncTime>2010-06-16T22:46:32+00:00</syncTime>
+      <calories>388.0</calories>
+      <name/>
+      <description/>
+      <howFelt>2</howFelt>
+      <weather>1</weather>
+      <terrain>2</terrain>
+      <intensity/>
+      <gpxId/>
+      <equipmentType>sportband</equipmentType>
+    </run>
+    <run id="1078856231" workoutType="standard">
+      <startTime>2010-06-23T13:00:59+00:00</startTime>
+      <distance>5.60444</distance>
+      <duration>2641000</duration>
+      <syncTime>2010-06-30T17:06:28+00:00</syncTime>
+      <calories>421.0</calories>
       <name/>
       <description/>
       <howFelt/>
@@ -493,73 +331,57 @@
       <gpxId/>
       <equipmentType>sportband</equipmentType>
     </run>
-    <run id="68959784" workoutType="standard">
-      <startTime>2009-04-02T07:11:15+00:59</startTime>
-      <distance>17.4395</distance>
-      <duration>5193000</duration>
-      <syncTime>2009-04-02T16:42:00+00:00</syncTime>
-      <calories>1445.0</calories>
+    <run id="1414515506" workoutType="standard">
+      <startTime>2010-06-28T18:34:43+00:00</startTime>
+      <distance>5.86784</distance>
+      <duration>2685000</duration>
+      <syncTime>2010-06-30T17:06:30+00:00</syncTime>
+      <calories>441.0</calories>
       <name/>
       <description/>
-      <howFelt/>
-      <weather/>
-      <terrain/>
-      <intensity/>
-      <gpxId/>
-      <relativeURL>/vc/valid/20090402/340906561.xml</relativeURL>
-      <equipmentType>sportband</equipmentType>
-    </run>
-    <run id="673036693" workoutType="standard">
-      <startTime>2009-04-11T07:09:39+00:59</startTime>
-      <distance>24.7464</distance>
-      <duration>7564000</duration>
-      <syncTime>2009-04-11T18:26:44+00:00</syncTime>
-      <calories>2051.0</calories>
-      <name/>
-      <description/>
-      <howFelt/>
-      <weather/>
-      <terrain/>
+      <howFelt>1</howFelt>
+      <weather>1</weather>
+      <terrain>1</terrain>
       <intensity/>
       <gpxId/>
       <equipmentType>sportband</equipmentType>
     </run>
-    <run id="940185334" workoutType="standard">
-      <startTime>2009-04-26T09:45:46+00:59</startTime>
-      <distance>41.2871</distance>
-      <duration>13354000</duration>
-      <syncTime>2009-09-08T20:17:16+00:00</syncTime>
-      <calories>3422.0</calories>
+    <run id="1280182823" workoutType="standard">
+      <startTime>2010-06-30T12:59:10+00:00</startTime>
+      <distance>6.05706</distance>
+      <duration>2661000</duration>
+      <syncTime>2010-06-30T17:06:32+00:00</syncTime>
+      <calories>455.0</calories>
       <name/>
       <description/>
-      <howFelt/>
-      <weather/>
-      <terrain/>
+      <howFelt>2</howFelt>
+      <weather>2</weather>
+      <terrain>2</terrain>
       <intensity/>
       <gpxId/>
       <equipmentType>sportband</equipmentType>
     </run>
-    <run id="873180453" workoutType="standard">
-      <startTime>2009-09-06T07:59:15+00:59</startTime>
-      <distance>7.6651</distance>
-      <duration>2092000</duration>
-      <syncTime>2009-09-08T20:17:18+00:00</syncTime>
-      <calories>635.0</calories>
+    <run id="1078774223" workoutType="standard">
+      <startTime>2010-07-02T18:48:57+00:00</startTime>
+      <distance>5.77652</distance>
+      <duration>2394000</duration>
+      <syncTime>2010-07-02T18:30:36+00:00</syncTime>
+      <calories>434.0</calories>
       <name/>
       <description/>
-      <howFelt/>
-      <weather/>
-      <terrain/>
+      <howFelt>1</howFelt>
+      <weather>2</weather>
+      <terrain>1</terrain>
       <intensity/>
       <gpxId/>
       <equipmentType>sportband</equipmentType>
     </run>
-    <run id="738963859" workoutType="standard">
-      <startTime>2009-09-12T14:17:02+00:59</startTime>
-      <distance>0.1123</distance>
-      <duration>7399000</duration>
-      <syncTime>2009-09-13T19:56:12+00:00</syncTime>
-      <calories>9.0</calories>
+    <run id="541830774" workoutType="standard">
+      <startTime>2010-07-10T00:15:03+00:00</startTime>
+      <distance>2.87435</distance>
+      <duration>1206000</duration>
+      <syncTime>2010-07-12T17:43:06+00:00</syncTime>
+      <calories>216.0</calories>
       <name/>
       <description/>
       <howFelt/>
@@ -569,12 +391,12 @@
       <gpxId/>
       <equipmentType>sportband</equipmentType>
     </run>
-    <run id="134896046" workoutType="standard">
-      <startTime>2009-09-13T08:45:42+00:59</startTime>
-      <distance>8.9088</distance>
-      <duration>2515000</duration>
-      <syncTime>2009-09-13T19:56:14+00:00</syncTime>
-      <calories>738.0</calories>
+    <run id="676048502" workoutType="standard">
+      <startTime>2010-07-11T18:05:44+00:00</startTime>
+      <distance>5.99817</distance>
+      <duration>2722000</duration>
+      <syncTime>2010-07-12T17:43:08+00:00</syncTime>
+      <calories>451.0</calories>
       <name/>
       <description/>
       <howFelt/>
@@ -584,236 +406,146 @@
       <gpxId/>
       <equipmentType>sportband</equipmentType>
     </run>
-    <run id="603994138" workoutType="standard">
-      <startTime>2009-10-11T06:53:53+00:00</startTime>
-      <distance>9.121</distance>
-      <duration>2861000</duration>
-      <syncTime>2009-11-07T23:27:34+00:00</syncTime>
-      <calories>756.0</calories>
+    <run id="1951026208" workoutType="standard">
+      <startTime>2010-07-13T18:36:55+00:00</startTime>
+      <distance>8.18081</distance>
+      <duration>3338000</duration>
+      <syncTime>2010-07-13T19:29:58+00:00</syncTime>
+      <calories>615.0</calories>
       <name/>
       <description/>
-      <howFelt/>
-      <weather/>
-      <terrain/>
+      <howFelt>1</howFelt>
+      <weather>2</weather>
+      <terrain>0</terrain>
       <intensity/>
       <gpxId/>
       <equipmentType>sportband</equipmentType>
     </run>
-    <run id="1014691012" workoutType="standard">
-      <startTime>2009-12-16T21:41:50+00:00</startTime>
-      <distance>0.0202</distance>
-      <duration>21000</duration>
-      <syncTime>2009-12-16T21:52:56+00:00</syncTime>
-      <calories>0.0</calories>
+    <run id="1951107268" workoutType="standard">
+      <startTime>2010-07-16T17:54:43+00:00</startTime>
+      <distance>10.154</distance>
+      <duration>4191000</duration>
+      <syncTime>2010-07-16T18:17:54+00:00</syncTime>
+      <calories>763.0</calories>
       <name/>
       <description/>
-      <howFelt/>
-      <weather/>
-      <terrain/>
+      <howFelt>1</howFelt>
+      <weather>1</weather>
+      <terrain>1</terrain>
       <intensity/>
       <gpxId/>
       <equipmentType>sportband</equipmentType>
     </run>
-    <run id="1887122211" workoutType="standard">
-      <startTime>2009-12-27T08:30:53+00:00</startTime>
-      <distance>4.9817</distance>
-      <duration>2610000</duration>
-      <syncTime>2009-12-31T11:22:37+00:00</syncTime>
-      <calories>412.0</calories>
+    <run id="541804144" workoutType="standard">
+      <startTime>2010-07-18T15:19:16+00:00</startTime>
+      <distance>10.291</distance>
+      <duration>4103000</duration>
+      <syncTime>2010-07-18T19:06:23+00:00</syncTime>
+      <calories>774.0</calories>
       <name/>
       <description/>
-      <howFelt/>
-      <weather/>
-      <terrain/>
+      <howFelt>1</howFelt>
+      <weather>2</weather>
+      <terrain>1</terrain>
       <intensity/>
       <gpxId/>
       <equipmentType>sportband</equipmentType>
     </run>
-    <run id="813394405" workoutType="standard">
-      <startTime>2010-01-01T08:59:16+00:00</startTime>
-      <distance>7.3532</distance>
-      <duration>2554000</duration>
-      <syncTime>2010-01-04T21:24:53+00:00</syncTime>
-      <calories>609.0</calories>
+    <run id="608721652" workoutType="standard">
+      <startTime>2010-07-21T18:53:10+00:00</startTime>
+      <distance>5.85593</distance>
+      <duration>2450000</duration>
+      <syncTime>2010-07-21T18:42:36+00:00</syncTime>
+      <calories>440.0</calories>
       <name/>
       <description/>
-      <howFelt/>
-      <weather/>
-      <terrain/>
+      <howFelt>2</howFelt>
+      <weather>2</weather>
+      <terrain>1</terrain>
       <intensity/>
       <gpxId/>
       <equipmentType>sportband</equipmentType>
     </run>
-    <run id="1685128513" workoutType="standard">
-      <startTime>2010-01-17T08:13:29+00:00</startTime>
-      <distance>4.6948</distance>
-      <duration>1705000</duration>
-      <syncTime>2010-02-20T15:31:34+00:00</syncTime>
-      <calories>389.0</calories>
+    <run id="743030484" workoutType="standard">
+      <startTime>2010-07-24T14:14:14+00:00</startTime>
+      <distance>10.8917</distance>
+      <duration>4799000</duration>
+      <syncTime>2010-07-24T14:37:12+00:00</syncTime>
+      <calories>819.0</calories>
       <name/>
       <description/>
-      <howFelt/>
-      <weather/>
-      <terrain/>
+      <howFelt>2</howFelt>
+      <weather>2</weather>
+      <terrain>1</terrain>
       <intensity/>
       <gpxId/>
       <equipmentType>sportband</equipmentType>
     </run>
-    <run id="1081181558" workoutType="standard">
-      <startTime>2010-01-28T07:26:22+00:00</startTime>
-      <distance>14.7363</distance>
-      <duration>5415000</duration>
-      <syncTime>2010-02-20T15:31:35+00:00</syncTime>
-      <calories>1221.0</calories>
+    <run id="810038641" workoutType="standard">
+      <startTime>2010-07-25T18:06:35+00:00</startTime>
+      <distance>6.43456</distance>
+      <duration>2872000</duration>
+      <syncTime>2010-07-25T21:43:01+00:00</syncTime>
+      <calories>484.0</calories>
       <name/>
       <description/>
-      <howFelt/>
-      <weather/>
-      <terrain/>
+      <howFelt>2</howFelt>
+      <weather>1</weather>
+      <terrain>1</terrain>
       <intensity/>
       <gpxId/>
       <equipmentType>sportband</equipmentType>
     </run>
-    <run id="1617563957" workoutType="standard">
-      <startTime>2010-03-14T16:08:20+00:00</startTime>
-      <distance>9.5794</distance>
-      <duration>3543000</duration>
-      <syncTime>2010-03-20T18:31:32+00:00</syncTime>
-      <calories>794.0</calories>
+    <run id="4829015" workoutType="standard">
+      <startTime>2010-07-28T18:01:12+00:00</startTime>
+      <distance>12.6724</distance>
+      <duration>5347000</duration>
+      <syncTime>2010-07-28T19:03:42+00:00</syncTime>
+      <calories>953.0</calories>
       <name/>
       <description/>
-      <howFelt/>
-      <weather/>
-      <terrain/>
+      <howFelt>1</howFelt>
+      <weather>1</weather>
+      <terrain>1</terrain>
       <intensity/>
       <gpxId/>
       <equipmentType>sportband</equipmentType>
     </run>
-    <run id="476388868" workoutType="standard">
-      <startTime>2010-03-21T09:52:46+00:59</startTime>
-      <distance>9.2642</distance>
-      <duration>3210000</duration>
-      <syncTime>2010-04-11T21:14:48+00:00</syncTime>
-      <calories>767.0</calories>
+    <run id="1145687047" workoutType="standard">
+      <startTime>2010-07-29T18:04:55+00:00</startTime>
+      <distance>5.75528</distance>
+      <duration>2439000</duration>
+      <syncTime>2010-07-29T20:25:39+00:00</syncTime>
+      <calories>433.0</calories>
       <name/>
       <description/>
-      <howFelt/>
-      <weather/>
-      <terrain/>
+      <howFelt>1</howFelt>
+      <weather>1</weather>
+      <terrain>1</terrain>
       <intensity/>
       <gpxId/>
       <equipmentType>sportband</equipmentType>
     </run>
-    <run id="1013261973" workoutType="standard">
-      <startTime>2010-03-27T11:09:50+00:59</startTime>
-      <distance>0.0134</distance>
-      <duration>15000</duration>
-      <syncTime>2010-04-11T21:14:50+00:00</syncTime>
-      <calories>1.0</calories>
+    <run id="1615403977" workoutType="standard">
+      <startTime>2010-07-30T18:23:38+00:00</startTime>
+      <distance>5.70109</distance>
+      <duration>2345000</duration>
+      <syncTime>2010-07-30T18:05:14+00:00</syncTime>
+      <calories>429.0</calories>
       <name/>
       <description/>
-      <howFelt/>
-      <weather/>
-      <terrain/>
-      <intensity/>
-      <gpxId/>
-      <equipmentType>sportband</equipmentType>
-    </run>
-    <run id="140851868" workoutType="standard">
-      <startTime>2010-03-27T11:12:46+00:59</startTime>
-      <distance>3.975</distance>
-      <duration>1285000</duration>
-      <syncTime>2010-04-11T21:14:50+00:00</syncTime>
-      <calories>329.0</calories>
-      <name/>
-      <description/>
-      <howFelt/>
-      <weather/>
-      <terrain/>
-      <intensity/>
-      <gpxId/>
-      <equipmentType>sportband</equipmentType>
-    </run>
-    <run id="409156317" workoutType="standard">
-      <startTime>2010-04-15T19:43:14+00:59</startTime>
-      <distance>4.9984</distance>
-      <duration>1338000</duration>
-      <syncTime>2010-04-18T19:57:41+00:00</syncTime>
-      <calories>414.0</calories>
-      <name/>
-      <description/>
-      <howFelt/>
-      <weather/>
-      <terrain/>
-      <intensity/>
-      <gpxId/>
-      <equipmentType>sportband</equipmentType>
-    </run>
-    <run id="1750899480" workoutType="standard">
-      <startTime>2010-05-02T08:25:26+00:59</startTime>
-      <distance>12.1437</distance>
-      <duration>3381000</duration>
-      <syncTime>2010-05-03T09:38:39+00:00</syncTime>
-      <calories>1006.0</calories>
-      <name/>
-      <description/>
-      <howFelt/>
-      <weather/>
-      <terrain/>
-      <intensity/>
-      <gpxId/>
-      <equipmentType>sportband</equipmentType>
-    </run>
-    <run id="1011620925" workoutType="standard">
-      <startTime>2010-05-31T08:39:17+00:59</startTime>
-      <distance>8.989</distance>
-      <duration>2525000</duration>
-      <syncTime>2010-07-03T18:37:13+00:00</syncTime>
-      <calories>745.0</calories>
-      <name/>
-      <description/>
-      <howFelt/>
-      <weather/>
-      <terrain/>
-      <intensity/>
-      <gpxId/>
-      <equipmentType>sportband</equipmentType>
-    </run>
-    <run id="1347210097" workoutType="standard">
-      <startTime>2010-06-27T07:58:06+00:59</startTime>
-      <distance>15.104</distance>
-      <duration>4244000</duration>
-      <syncTime>2010-07-03T18:37:15+00:00</syncTime>
-      <calories>1252.0</calories>
-      <name/>
-      <description/>
-      <howFelt/>
-      <weather/>
-      <terrain/>
-      <intensity/>
-      <gpxId/>
-      <equipmentType>sportband</equipmentType>
-    </run>
-    <run id="1883929277" workoutType="standard">
-      <startTime>2010-07-10T07:36:26+00:59</startTime>
-      <distance>7.4021</distance>
-      <duration>2068000</duration>
-      <syncTime>2010-07-12T23:03:52+00:00</syncTime>
-      <calories>613.0</calories>
-      <name/>
-      <description/>
-      <howFelt/>
-      <weather/>
-      <terrain/>
+      <howFelt>1</howFelt>
+      <weather>2</weather>
+      <terrain>1</terrain>
       <intensity/>
       <gpxId/>
       <equipmentType>sportband</equipmentType>
     </run>
   </runList>
   <runListSummary>
-    <runs>53</runs>
-    <distance>557.91</distance>
-    <duration>193619000</duration>
-    <calories>46223.0</calories>
+    <runs>36</runs>
+    <distance>217.64</distance>
+    <duration>95446000</duration>
+    <calories>16353.0</calories>
   </runListSummary>
 </plusService>

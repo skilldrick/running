@@ -429,3 +429,572 @@ Processing RunsController#index (for 127.0.0.1 at 2010-08-01 19:11:39) [GET]
 Rendering template within layouts/runs
 Rendering runs/index
 Completed in 957ms (View: 13, DB: 0) | 200 OK [http://localhost/runs]
+
+
+Processing RunsController#index (for 127.0.0.1 at 2010-08-01 19:24:17) [GET]
+  [4;35;1mRun Load (0.4ms)[0m   [0mSELECT * FROM "runs" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NameError (undefined local variable or method `user_id' for #<Class:0xa6a7fb4>):
+  app/models/run.rb:15:in `get_run'
+  app/controllers/runs_controller.rb:6:in `index'
+  <internal:prelude>:8:in `synchronize'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (60.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RunsController#index (for 127.0.0.1 at 2010-08-01 19:24:36) [GET]
+  [4;35;1mRun Load (0.4ms)[0m   [0mSELECT * FROM "runs" [0m
+Rendering template within layouts/runs
+Rendering runs/index
+Completed in 1105ms (View: 2, DB: 0) | 200 OK [http://localhost/runs]
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateRuns (20100801115007)
+Migrating to AddRunIdToRuns (20100801182920)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mALTER TABLE "runs" ADD "run_id" integer[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("runs")[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE UNIQUE INDEX "index_runs_on_run_id" ON "runs" ("run_id")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100801182920')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("runs")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_runs_on_run_id')[0m
+
+
+Processing RunsController#index (for 127.0.0.1 at 2010-08-01 19:46:45) [GET]
+  [4;36;1mRun Load (0.4ms)[0m   [0;1mSELECT * FROM "runs" [0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = 1615403977) LIMIT 1[0m
+  [4;36;1mRun Create (0.5ms)[0m   [0;1mINSERT INTO "runs" ("distance", "avg_pace", "created_at", "updated_at", "run_id") VALUES(NULL, NULL, '2010-08-01 18:46:46', '2010-08-01 18:46:46', 1615403977)[0m
+Rendering template within layouts/runs
+Rendering runs/index
+Completed in 1561ms (View: 2, DB: 1) | 200 OK [http://localhost/runs]
+
+
+Processing RunsController#index (for 127.0.0.1 at 2010-08-01 19:49:28) [GET]
+  [4;35;1mRun Load (0.5ms)[0m   [0mSELECT * FROM "runs" [0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '953893823') LIMIT 1[0m
+  [4;35;1mRun Create (0.4ms)[0m   [0mINSERT INTO "runs" ("distance", "avg_pace", "created_at", "updated_at", "run_id") VALUES(NULL, NULL, '2010-08-01 18:49:29', '2010-08-01 18:49:29', 953893823)[0m
+Rendering template within layouts/runs
+Rendering runs/index
+Completed in 1398ms (View: 3, DB: 1) | 200 OK [http://localhost/runs]
+
+
+Processing RunsController#index (for 127.0.0.1 at 2010-08-01 20:01:53) [GET]
+  [4;36;1mRun Load (1.5ms)[0m   [0;1mSELECT * FROM "runs" [0m
+  [4;35;1mRun Load (1.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '953893823') LIMIT 1[0m
+Rendering template within layouts/runs
+Rendering runs/index
+Completed in 1224ms (View: 4, DB: 3) | 200 OK [http://localhost/runs]
+
+
+Processing RunsController#index (for 127.0.0.1 at 2010-08-01 20:05:29) [GET]
+  [4;36;1mRun Load (0.5ms)[0m   [0;1mSELECT * FROM "runs" [0m
+  [4;35;1mRun Load (0.3ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '953893823') LIMIT 1[0m
+Rendering template within layouts/runs
+Rendering runs/index
+Completed in 21ms (View: 4, DB: 1) | 200 OK [http://localhost/runs]
+
+
+Processing RunsController#index (for 127.0.0.1 at 2010-08-01 20:05:59) [GET]
+  [4;36;1mRun Load (0.5ms)[0m   [0;1mSELECT * FROM "runs" [0m
+  [4;35;1mRun Load (0.3ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '953893823') LIMIT 1[0m
+Rendering template within layouts/runs
+Rendering runs/index
+Completed in 33ms (View: 17, DB: 1) | 200 OK [http://localhost/runs]
+
+
+Processing RunsController#index (for 127.0.0.1 at 2010-08-01 20:10:12) [GET]
+  [4;36;1mRun Load (0.6ms)[0m   [0;1mSELECT * FROM "runs" [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NameError (undefined local variable or method `run' for #<Class:0xa1888e0>):
+  app/models/run.rb:46:in `block (2 levels) in populate_runs'
+  /usr/lib/ruby/1.9.1/rexml/element.rb:906:in `block in each'
+  /usr/lib/ruby/1.9.1/rexml/xpath.rb:64:in `each'
+  /usr/lib/ruby/1.9.1/rexml/xpath.rb:64:in `each'
+  /usr/lib/ruby/1.9.1/rexml/element.rb:906:in `each'
+  app/models/run.rb:41:in `block in populate_runs'
+  /usr/lib/ruby/1.9.1/open-uri.rb:150:in `open_uri'
+  /usr/lib/ruby/1.9.1/open-uri.rb:669:in `open'
+  /usr/lib/ruby/1.9.1/open-uri.rb:33:in `open'
+  app/models/run.rb:39:in `populate_runs'
+  app/controllers/runs_controller.rb:6:in `index'
+  <internal:prelude>:8:in `synchronize'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (67.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RunsController#index (for 127.0.0.1 at 2010-08-01 20:10:21) [GET]
+  [4;36;1mRun Load (0.6ms)[0m   [0;1mSELECT * FROM "runs" [0m
+Rendering template within layouts/runs
+Rendering runs/index
+Completed in 4264ms (View: 8, DB: 1) | 200 OK [http://localhost/runs]
+
+
+Processing RunsController#index (for 127.0.0.1 at 2010-08-01 20:10:39) [GET]
+  [4;35;1mRun Load (0.5ms)[0m   [0mSELECT * FROM "runs" [0m
+Rendering template within layouts/runs
+Rendering runs/index
+Completed in 562ms (View: 7, DB: 1) | 200 OK [http://localhost/runs]
+
+
+Processing RunsController#index (for 127.0.0.1 at 2010-08-01 20:11:32) [GET]
+  [4;36;1mRun Load (0.5ms)[0m   [0;1mSELECT * FROM "runs" [0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1752070113') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '208604032') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1685061062') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '544195253') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1349455087') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '678428168') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1819232783') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '2087563308') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '7192418') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '141179075') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '7167607') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '141028227') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1751509066') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '275057215') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1818395901') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1281505867') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1147335356') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '341071908') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1146272955') LIMIT 1[0m
+  [4;36;1mRun Load (0.1ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1213435073') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '609433028') LIMIT 1[0m
+  [4;36;1mRun Load (0.3ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1078856231') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1414515506') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1280182823') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1078774223') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '541830774') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '676048502') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1951026208') LIMIT 1[0m
+  [4;35;1mRun Load (0.3ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1951107268') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '541804144') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '608721652') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '743030484') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '810038641') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '4829015') LIMIT 1[0m
+  [4;35;1mRun Load (0.1ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1145687047') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1615403977') LIMIT 1[0m
+Rendering template within layouts/runs
+Rendering runs/index
+Completed in 696ms (View: 5, DB: 7) | 200 OK [http://localhost/runs]
+
+
+Processing RunsController#index (for 127.0.0.1 at 2010-08-01 20:12:16) [GET]
+
+SyntaxError (/home/nick/prog/running/app/models/run.rb:51: syntax error, unexpected $end, expecting keyword_end):
+  app/controllers/runs_controller.rb:5:in `index'
+  <internal:prelude>:8:in `synchronize'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (120.3ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RunsController#index (for 127.0.0.1 at 2010-08-01 20:12:32) [GET]
+  [4;35;1mRun Load (0.5ms)[0m   [0mSELECT * FROM "runs" [0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1752070113') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '208604032') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1685061062') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '544195253') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1349455087') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '678428168') LIMIT 1[0m
+  [4;36;1mRun Load (0.3ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1819232783') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '2087563308') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '7192418') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '141179075') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '7167607') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '141028227') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1751509066') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '275057215') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1818395901') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1281505867') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1147335356') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '341071908') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1146272955') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1213435073') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '609433028') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1078856231') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1414515506') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1280182823') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1078774223') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '541830774') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '676048502') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1951026208') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1951107268') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '541804144') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '608721652') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '743030484') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '810038641') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '4829015') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1145687047') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1615403977') LIMIT 1[0m
+Rendering template within layouts/runs
+Rendering runs/index
+Completed in 658ms (View: 5, DB: 8) | 200 OK [http://localhost/runs]
+
+
+Processing RunsController#index (for 127.0.0.1 at 2010-08-01 20:13:01) [GET]
+  [4;36;1mRun Load (0.5ms)[0m   [0;1mSELECT * FROM "runs" [0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1752070113') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '208604032') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1685061062') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '544195253') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1349455087') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '678428168') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1819232783') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '2087563308') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '7192418') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '141179075') LIMIT 1[0m
+  [4;35;1mRun Load (0.1ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '7167607') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '141028227') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1751509066') LIMIT 1[0m
+  [4;36;1mRun Load (0.3ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '275057215') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1818395901') LIMIT 1[0m
+  [4;36;1mRun Load (0.3ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1281505867') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1147335356') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '341071908') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1146272955') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1213435073') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '609433028') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1078856231') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1414515506') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1280182823') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1078774223') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '541830774') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '676048502') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1951026208') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1951107268') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '541804144') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '608721652') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '743030484') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '810038641') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '4829015') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1145687047') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1615403977') LIMIT 1[0m
+Rendering template within layouts/runs
+Rendering runs/index
+Completed in 622ms (View: 5, DB: 7) | 200 OK [http://localhost/runs]
+
+
+Processing RunsController#index (for 127.0.0.1 at 2010-08-01 20:15:38) [GET]
+  [4;35;1mRun Load (0.5ms)[0m   [0mSELECT * FROM "runs" [0m
+  [4;36;1mRun Load (0.3ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1752070113') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '208604032') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1685061062') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '544195253') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1349455087') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '678428168') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1819232783') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '2087563308') LIMIT 1[0m
+  [4;36;1mRun Load (0.1ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '7192418') LIMIT 1[0m
+  [4;35;1mRun Load (1.4ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '141179075') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '7167607') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '141028227') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1751509066') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '275057215') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1818395901') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1281505867') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1147335356') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '341071908') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1146272955') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1213435073') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '609433028') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1078856231') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1414515506') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1280182823') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1078774223') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '541830774') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '676048502') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1951026208') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1951107268') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '541804144') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '608721652') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '743030484') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '810038641') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '4829015') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1145687047') LIMIT 1[0m
+  [4;35;1mRun Load (0.3ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1615403977') LIMIT 1[0m
+Rendering template within layouts/runs
+Rendering runs/index
+Completed in 653ms (View: 5, DB: 8) | 200 OK [http://localhost/runs]
+  [4;36;1mRun Load (0.8ms)[0m   [0;1mSELECT * FROM "runs" [0m
+  [4;35;1mRun Destroy (0.4ms)[0m   [0mDELETE FROM "runs" WHERE "id" = 2[0m
+  [4;36;1mRun Load (0.3ms)[0m   [0;1mSELECT * FROM "runs" [0m
+
+
+Processing RunsController#index (for 127.0.0.1 at 2010-08-01 20:23:31) [GET]
+  [4;36;1mRun Load (0.7ms)[0m   [0;1mSELECT * FROM "runs" [0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1752070113') LIMIT 1[0m
+  [4;36;1mRun Create (0.5ms)[0m   [0;1mINSERT INTO "runs" ("distance", "avg_pace", "created_at", "updated_at", "run_id") VALUES(6.264, NULL, '2010-08-01 19:23:32', '2010-08-01 19:23:32', 1752070113)[0m
+  [4;35;1mRun Load (0.3ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '208604032') LIMIT 1[0m
+  [4;36;1mRun Create (0.3ms)[0m   [0;1mINSERT INTO "runs" ("distance", "avg_pace", "created_at", "updated_at", "run_id") VALUES(0.3682, NULL, '2010-08-01 19:23:32', '2010-08-01 19:23:32', 208604032)[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1685061062') LIMIT 1[0m
+  [4;36;1mRun Create (0.3ms)[0m   [0;1mINSERT INTO "runs" ("distance", "avg_pace", "created_at", "updated_at", "run_id") VALUES(0.4256, NULL, '2010-08-01 19:23:32', '2010-08-01 19:23:32', 1685061062)[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '544195253') LIMIT 1[0m
+  [4;36;1mRun Create (0.3ms)[0m   [0;1mINSERT INTO "runs" ("distance", "avg_pace", "created_at", "updated_at", "run_id") VALUES(0.9241, NULL, '2010-08-01 19:23:32', '2010-08-01 19:23:32', 544195253)[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1349455087') LIMIT 1[0m
+  [4;36;1mRun Create (0.3ms)[0m   [0;1mINSERT INTO "runs" ("distance", "avg_pace", "created_at", "updated_at", "run_id") VALUES(0.7665, NULL, '2010-08-01 19:23:32', '2010-08-01 19:23:32', 1349455087)[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '678428168') LIMIT 1[0m
+  [4;36;1mRun Create (0.3ms)[0m   [0;1mINSERT INTO "runs" ("distance", "avg_pace", "created_at", "updated_at", "run_id") VALUES(5.8997, NULL, '2010-08-01 19:23:32', '2010-08-01 19:23:32', 678428168)[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1819232783') LIMIT 1[0m
+  [4;36;1mRun Create (0.3ms)[0m   [0;1mINSERT INTO "runs" ("distance", "avg_pace", "created_at", "updated_at", "run_id") VALUES(5.8593, NULL, '2010-08-01 19:23:32', '2010-08-01 19:23:32', 1819232783)[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '2087563308') LIMIT 1[0m
+  [4;36;1mRun Create (0.3ms)[0m   [0;1mINSERT INTO "runs" ("distance", "avg_pace", "created_at", "updated_at", "run_id") VALUES(5.259, NULL, '2010-08-01 19:23:32', '2010-08-01 19:23:32', 2087563308)[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '7192418') LIMIT 1[0m
+  [4;36;1mRun Create (0.3ms)[0m   [0;1mINSERT INTO "runs" ("distance", "avg_pace", "created_at", "updated_at", "run_id") VALUES(9.4616, NULL, '2010-08-01 19:23:33', '2010-08-01 19:23:33', 7192418)[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '141179075') LIMIT 1[0m
+  [4;36;1mRun Create (0.3ms)[0m   [0;1mINSERT INTO "runs" ("distance", "avg_pace", "created_at", "updated_at", "run_id") VALUES(5.1825, NULL, '2010-08-01 19:23:33', '2010-08-01 19:23:33', 141179075)[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '7167607') LIMIT 1[0m
+  [4;36;1mRun Create (0.3ms)[0m   [0;1mINSERT INTO "runs" ("distance", "avg_pace", "created_at", "updated_at", "run_id") VALUES(5.959, NULL, '2010-08-01 19:23:33', '2010-08-01 19:23:33', 7167607)[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '141028227') LIMIT 1[0m
+  [4;36;1mRun Create (0.3ms)[0m   [0;1mINSERT INTO "runs" ("distance", "avg_pace", "created_at", "updated_at", "run_id") VALUES(5.8786, NULL, '2010-08-01 19:23:33', '2010-08-01 19:23:33', 141028227)[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1751509066') LIMIT 1[0m
+  [4;36;1mRun Create (0.3ms)[0m   [0;1mINSERT INTO "runs" ("distance", "avg_pace", "created_at", "updated_at", "run_id") VALUES(5.8079, NULL, '2010-08-01 19:23:33', '2010-08-01 19:23:33', 1751509066)[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '275057215') LIMIT 1[0m
+  [4;36;1mRun Create (0.3ms)[0m   [0;1mINSERT INTO "runs" ("distance", "avg_pace", "created_at", "updated_at", "run_id") VALUES(2.8355, NULL, '2010-08-01 19:23:33', '2010-08-01 19:23:33', 275057215)[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1818395901') LIMIT 1[0m
+  [4;36;1mRun Create (0.3ms)[0m   [0;1mINSERT INTO "runs" ("distance", "avg_pace", "created_at", "updated_at", "run_id") VALUES(8.6816, NULL, '2010-08-01 19:23:33', '2010-08-01 19:23:33', 1818395901)[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1281505867') LIMIT 1[0m
+  [4;36;1mRun Create (0.3ms)[0m   [0;1mINSERT INTO "runs" ("distance", "avg_pace", "created_at", "updated_at", "run_id") VALUES(5.8494, NULL, '2010-08-01 19:23:33', '2010-08-01 19:23:33', 1281505867)[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1147335356') LIMIT 1[0m
+  [4;36;1mRun Create (0.3ms)[0m   [0;1mINSERT INTO "runs" ("distance", "avg_pace", "created_at", "updated_at", "run_id") VALUES(8.6772, NULL, '2010-08-01 19:23:33', '2010-08-01 19:23:33', 1147335356)[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '341071908') LIMIT 1[0m
+  [4;36;1mRun Create (1.3ms)[0m   [0;1mINSERT INTO "runs" ("distance", "avg_pace", "created_at", "updated_at", "run_id") VALUES(5.97009, NULL, '2010-08-01 19:23:33', '2010-08-01 19:23:33', 341071908)[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1146272955') LIMIT 1[0m
+  [4;36;1mRun Create (0.3ms)[0m   [0;1mINSERT INTO "runs" ("distance", "avg_pace", "created_at", "updated_at", "run_id") VALUES(5.8685, NULL, '2010-08-01 19:23:33', '2010-08-01 19:23:33', 1146272955)[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1213435073') LIMIT 1[0m
+  [4;36;1mRun Create (0.3ms)[0m   [0;1mINSERT INTO "runs" ("distance", "avg_pace", "created_at", "updated_at", "run_id") VALUES(8.43382, NULL, '2010-08-01 19:23:33', '2010-08-01 19:23:33', 1213435073)[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '609433028') LIMIT 1[0m
+  [4;36;1mRun Create (0.3ms)[0m   [0;1mINSERT INTO "runs" ("distance", "avg_pace", "created_at", "updated_at", "run_id") VALUES(5.15451, NULL, '2010-08-01 19:23:33', '2010-08-01 19:23:33', 609433028)[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1078856231') LIMIT 1[0m
+  [4;36;1mRun Create (0.3ms)[0m   [0;1mINSERT INTO "runs" ("distance", "avg_pace", "created_at", "updated_at", "run_id") VALUES(5.60444, NULL, '2010-08-01 19:23:34', '2010-08-01 19:23:34', 1078856231)[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1414515506') LIMIT 1[0m
+  [4;36;1mRun Create (0.3ms)[0m   [0;1mINSERT INTO "runs" ("distance", "avg_pace", "created_at", "updated_at", "run_id") VALUES(5.86784, NULL, '2010-08-01 19:23:34', '2010-08-01 19:23:34', 1414515506)[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1280182823') LIMIT 1[0m
+  [4;36;1mRun Create (0.3ms)[0m   [0;1mINSERT INTO "runs" ("distance", "avg_pace", "created_at", "updated_at", "run_id") VALUES(6.05706, NULL, '2010-08-01 19:23:34', '2010-08-01 19:23:34', 1280182823)[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1078774223') LIMIT 1[0m
+  [4;36;1mRun Create (0.3ms)[0m   [0;1mINSERT INTO "runs" ("distance", "avg_pace", "created_at", "updated_at", "run_id") VALUES(5.77652, NULL, '2010-08-01 19:23:34', '2010-08-01 19:23:34', 1078774223)[0m
+  [4;35;1mRun Load (0.3ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '541830774') LIMIT 1[0m
+  [4;36;1mRun Create (0.3ms)[0m   [0;1mINSERT INTO "runs" ("distance", "avg_pace", "created_at", "updated_at", "run_id") VALUES(2.87435, NULL, '2010-08-01 19:23:34', '2010-08-01 19:23:34', 541830774)[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '676048502') LIMIT 1[0m
+  [4;36;1mRun Create (0.3ms)[0m   [0;1mINSERT INTO "runs" ("distance", "avg_pace", "created_at", "updated_at", "run_id") VALUES(5.99817, NULL, '2010-08-01 19:23:34', '2010-08-01 19:23:34', 676048502)[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1951026208') LIMIT 1[0m
+  [4;36;1mRun Create (1.1ms)[0m   [0;1mINSERT INTO "runs" ("distance", "avg_pace", "created_at", "updated_at", "run_id") VALUES(8.18081, NULL, '2010-08-01 19:23:34', '2010-08-01 19:23:34', 1951026208)[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1951107268') LIMIT 1[0m
+  [4;36;1mRun Create (0.3ms)[0m   [0;1mINSERT INTO "runs" ("distance", "avg_pace", "created_at", "updated_at", "run_id") VALUES(10.154, NULL, '2010-08-01 19:23:34', '2010-08-01 19:23:34', 1951107268)[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '541804144') LIMIT 1[0m
+  [4;36;1mRun Create (0.3ms)[0m   [0;1mINSERT INTO "runs" ("distance", "avg_pace", "created_at", "updated_at", "run_id") VALUES(10.291, NULL, '2010-08-01 19:23:34', '2010-08-01 19:23:34', 541804144)[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '608721652') LIMIT 1[0m
+  [4;36;1mRun Create (0.3ms)[0m   [0;1mINSERT INTO "runs" ("distance", "avg_pace", "created_at", "updated_at", "run_id") VALUES(5.85593, NULL, '2010-08-01 19:23:34', '2010-08-01 19:23:34', 608721652)[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '743030484') LIMIT 1[0m
+  [4;36;1mRun Create (0.4ms)[0m   [0;1mINSERT INTO "runs" ("distance", "avg_pace", "created_at", "updated_at", "run_id") VALUES(10.8917, NULL, '2010-08-01 19:23:34', '2010-08-01 19:23:34', 743030484)[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '810038641') LIMIT 1[0m
+  [4;36;1mRun Create (0.3ms)[0m   [0;1mINSERT INTO "runs" ("distance", "avg_pace", "created_at", "updated_at", "run_id") VALUES(6.43456, NULL, '2010-08-01 19:23:34', '2010-08-01 19:23:34', 810038641)[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '4829015') LIMIT 1[0m
+  [4;36;1mRun Create (0.3ms)[0m   [0;1mINSERT INTO "runs" ("distance", "avg_pace", "created_at", "updated_at", "run_id") VALUES(12.6724, NULL, '2010-08-01 19:23:34', '2010-08-01 19:23:34', 4829015)[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1145687047') LIMIT 1[0m
+  [4;36;1mRun Create (0.3ms)[0m   [0;1mINSERT INTO "runs" ("distance", "avg_pace", "created_at", "updated_at", "run_id") VALUES(5.75528, NULL, '2010-08-01 19:23:35', '2010-08-01 19:23:35', 1145687047)[0m
+  [4;35;1mRun Load (0.3ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1615403977') LIMIT 1[0m
+  [4;36;1mRun Update (0.3ms)[0m   [0;1mUPDATE "runs" SET "distance" = 5.70109, "updated_at" = '2010-08-01 19:23:35' WHERE "id" = 1[0m
+Rendering template within layouts/runs
+Rendering runs/index
+Completed in 4122ms (View: 28, DB: 21) | 200 OK [http://localhost/runs]
+
+
+Processing RunsController#index (for 127.0.0.1 at 2010-08-01 20:23:37) [GET]
+  [4;35;1mRun Load (1.5ms)[0m   [0mSELECT * FROM "runs" [0m
+  [4;36;1mRun Load (0.3ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1752070113') LIMIT 1[0m
+  [4;35;1mRun Load (0.3ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '208604032') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1685061062') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '544195253') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1349455087') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '678428168') LIMIT 1[0m
+  [4;36;1mRun Load (0.3ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1819232783') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '2087563308') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '7192418') LIMIT 1[0m
+  [4;35;1mRun Load (0.3ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '141179075') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '7167607') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '141028227') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1751509066') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '275057215') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1818395901') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1281505867') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1147335356') LIMIT 1[0m
+  [4;35;1mRun Load (0.3ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '341071908') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1146272955') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1213435073') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '609433028') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1078856231') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1414515506') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1280182823') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1078774223') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '541830774') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '676048502') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1951026208') LIMIT 1[0m
+  [4;36;1mRun Load (1.5ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1951107268') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '541804144') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '608721652') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '743030484') LIMIT 1[0m
+  [4;36;1mRun Load (0.3ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '810038641') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '4829015') LIMIT 1[0m
+  [4;36;1mRun Load (0.3ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1145687047') LIMIT 1[0m
+  [4;35;1mRun Load (0.3ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1615403977') LIMIT 1[0m
+Rendering template within layouts/runs
+Rendering runs/index
+Completed in 804ms (View: 40, DB: 11) | 200 OK [http://localhost/runs]
+  [4;35;1mRun Load (1.2ms)[0m   [0mSELECT * FROM "runs" [0m
+
+
+Processing RunsController#index (for 127.0.0.1 at 2010-08-01 20:24:32) [GET]
+  [4;36;1mRun Load (1.4ms)[0m   [0;1mSELECT * FROM "runs" [0m
+  [4;35;1mRun Load (0.3ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1752070113') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '208604032') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1685061062') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '544195253') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1349455087') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '678428168') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1819232783') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '2087563308') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '7192418') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '141179075') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '7167607') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '141028227') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1751509066') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '275057215') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1818395901') LIMIT 1[0m
+  [4;36;1mRun Load (0.3ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1281505867') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1147335356') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '341071908') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1146272955') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1213435073') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '609433028') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1078856231') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1414515506') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1280182823') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1078774223') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '541830774') LIMIT 1[0m
+  [4;35;1mRun Load (0.3ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '676048502') LIMIT 1[0m
+  [4;36;1mRun Load (0.3ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1951026208') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1951107268') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '541804144') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '608721652') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '743030484') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '810038641') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '4829015') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1145687047') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1615403977') LIMIT 1[0m
+Rendering template within layouts/runs
+Rendering runs/index
+Completed in 664ms (View: 40, DB: 10) | 200 OK [http://localhost/runs]
+
+
+Processing RunsController#index (for 127.0.0.1 at 2010-08-01 20:26:03) [GET]
+  [4;35;1mRun Load (1.4ms)[0m   [0mSELECT * FROM "runs" [0m
+Rendering template within layouts/runs
+Rendering runs/index
+Completed in 119ms (View: 104, DB: 1) | 200 OK [http://localhost/runs]
+
+
+Processing RunsController#index (for 127.0.0.1 at 2010-08-01 20:26:24) [GET]
+  [4;36;1mRun Load (1.5ms)[0m   [0;1mSELECT * FROM "runs" [0m
+Rendering template within layouts/runs
+Rendering runs/index
+Completed in 69ms (View: 55, DB: 1) | 200 OK [http://localhost/runs]
+
+
+Processing RunsController#index (for 127.0.0.1 at 2010-08-01 20:26:35) [GET]
+  [4;35;1mRun Load (1.4ms)[0m   [0mSELECT * FROM "runs" [0m
+Rendering template within layouts/runs
+Rendering runs/index
+Completed in 67ms (View: 53, DB: 1) | 200 OK [http://localhost/runs]
+
+
+Processing RunsController#index (for 127.0.0.1 at 2010-08-01 20:27:00) [GET]
+  [4;36;1mRun Load (1.7ms)[0m   [0;1mSELECT * FROM "runs" [0m
+Rendering template within layouts/runs
+Rendering runs/index
+Completed in 482ms (View: 103, DB: 2) | 200 OK [http://localhost/runs]
+  [4;36;1mRun Load (1.6ms)[0m   [0;1mSELECT * FROM "runs" [0m
+
+
+Processing RunsController#index (for 127.0.0.1 at 2010-08-01 20:27:56) [GET]
+  [4;35;1mRun Load (1.5ms)[0m   [0mSELECT * FROM "runs" [0m
+Rendering template within layouts/runs
+Rendering runs/index
+Completed in 59ms (View: 45, DB: 1) | 200 OK [http://localhost/runs]
+
+
+Processing RunsController#index (for 127.0.0.1 at 2010-08-01 20:29:16) [GET]
+  [4;36;1mRun Load (0.3ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1752070113') LIMIT 1[0m
+  [4;35;1mRun Load (0.3ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '208604032') LIMIT 1[0m
+  [4;36;1mRun Load (0.3ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1685061062') LIMIT 1[0m
+  [4;35;1mRun Load (0.3ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '544195253') LIMIT 1[0m
+  [4;36;1mRun Load (0.3ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1349455087') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '678428168') LIMIT 1[0m
+  [4;36;1mRun Load (0.3ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1819232783') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '2087563308') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '7192418') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '141179075') LIMIT 1[0m
+  [4;36;1mRun Load (0.3ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '7167607') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '141028227') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1751509066') LIMIT 1[0m
+  [4;35;1mRun Load (0.3ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '275057215') LIMIT 1[0m
+  [4;36;1mRun Load (0.3ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1818395901') LIMIT 1[0m
+  [4;35;1mRun Load (0.3ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1281505867') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1147335356') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '341071908') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1146272955') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1213435073') LIMIT 1[0m
+  [4;36;1mRun Load (0.3ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '609433028') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1078856231') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1414515506') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1280182823') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1078774223') LIMIT 1[0m
+  [4;35;1mRun Load (0.3ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '541830774') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '676048502') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1951026208') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1951107268') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '541804144') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '608721652') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '743030484') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '810038641') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '4829015') LIMIT 1[0m
+  [4;36;1mRun Load (0.2ms)[0m   [0;1mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1145687047') LIMIT 1[0m
+  [4;35;1mRun Load (0.2ms)[0m   [0mSELECT * FROM "runs" WHERE ("runs"."run_id" = '1615403977') LIMIT 1[0m
+  [4;36;1mRun Load (1.2ms)[0m   [0;1mSELECT * FROM "runs" [0m
+Rendering template within layouts/runs
+Rendering runs/index
+Completed in 806ms (View: 41, DB: 10) | 200 OK [http://localhost/runs]

@@ -4,12 +4,14 @@
   <tr>
     <th>Distance</th>
     <th>Avg pace</th>
+    <th>Run ID</th>
   </tr>
 
 <% @runs.each do |run| %>
   <tr>
-    <td><%=h run.distance %></td>
+    <td><%=h run.distance.to_s %></td>
     <td><%=h run.avg_pace %></td>
+    <td><%=h run.run_id %></td>
     <td><%= link_to 'Show', run %></td>
     <td><%= link_to 'Edit', edit_run_path(run) %></td>
     <td><%= link_to 'Destroy', run, :confirm => 'Are you sure?', :method => :delete %></td>
