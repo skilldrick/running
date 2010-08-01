@@ -1,0 +1,431 @@
+
+
+Processing RunsController#index (for 127.0.0.1 at 2010-08-01 12:54:14) [GET]
+  [4;36;1mRun Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: runs: SELECT * FROM "runs" [0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: runs: SELECT * FROM "runs" ):
+  app/controllers/runs_controller.rb:5:in `index'
+  <internal:prelude>:8:in `synchronize'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (112.6ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (106.2ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (86.3ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateRuns (20100801115007)
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "runs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "distance" float, "avg_pace" float, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100801115007')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("runs")[0m
+
+
+Processing RunsController#index (for 127.0.0.1 at 2010-08-01 12:54:29) [GET]
+  [4;35;1mRun Load (0.4ms)[0m   [0mSELECT * FROM "runs" [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `get_run' for #<Class:0x9e5191c>):
+  app/controllers/runs_controller.rb:6:in `index'
+  <internal:prelude>:8:in `synchronize'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (60.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RunsController#index (for 127.0.0.1 at 2010-08-01 16:26:06) [GET]
+  [4;35;1mRun Load (0.4ms)[0m   [0mSELECT * FROM "runs" [0m
+Rendering template within layouts/runs
+Rendering runs/index
+Completed in 2030ms (View: 89, DB: 0) | 200 OK [http://localhost/runs]
+
+
+Processing RunsController#index (for 127.0.0.1 at 2010-08-01 16:28:30) [GET]
+  [4;36;1mRun Load (0.4ms)[0m   [0;1mSELECT * FROM "runs" [0m
+
+URI::InvalidURIError (bad URI(is not URI?): http://nikerunning.nike.com/nikeplus/v1/services/app/get_run.jsp?id=16154039771615403977&userID={user_id}):
+  /usr/lib/ruby/1.9.1/uri/common.rb:156:in `split'
+  /usr/lib/ruby/1.9.1/uri/common.rb:174:in `parse'
+  /usr/lib/ruby/1.9.1/uri/common.rb:626:in `parse'
+  /usr/lib/ruby/1.9.1/open-uri.rb:32:in `open'
+  app/models/run.rb:10:in `get_run'
+  app/controllers/runs_controller.rb:6:in `index'
+  <internal:prelude>:8:in `synchronize'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (61.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RunsController#index (for 127.0.0.1 at 2010-08-01 16:28:53) [GET]
+  [4;35;1mRun Load (0.4ms)[0m   [0mSELECT * FROM "runs" [0m
+Rendering template within layouts/runs
+Rendering runs/index
+Completed in 317ms (View: 2, DB: 0) | 200 OK [http://localhost/runs]
+
+
+Processing RunsController#index (for 127.0.0.1 at 2010-08-01 16:30:11) [GET]
+  [4;36;1mRun Load (0.5ms)[0m   [0;1mSELECT * FROM "runs" [0m
+Rendering template within layouts/runs
+Rendering runs/index
+Completed in 327ms (View: 12, DB: 0) | 200 OK [http://localhost/runs]
+
+
+Processing RunsController#index (for 127.0.0.1 at 2010-08-01 16:30:36) [GET]
+  [4;35;1mRun Load (0.4ms)[0m   [0mSELECT * FROM "runs" [0m
+Rendering template within layouts/runs
+Rendering runs/index
+Completed in 518ms (View: 2, DB: 0) | 200 OK [http://localhost/runs]
+
+
+Processing RunsController#index (for 127.0.0.1 at 2010-08-01 16:36:11) [GET]
+  [4;36;1mRun Load (0.4ms)[0m   [0;1mSELECT * FROM "runs" [0m
+Rendering template within layouts/runs
+Rendering runs/index
+Completed in 553ms (View: 13, DB: 0) | 200 OK [http://localhost/runs]
+
+
+Processing RunsController#index (for 127.0.0.1 at 2010-08-01 18:35:56) [GET]
+  [4;35;1mRun Load (0.4ms)[0m   [0mSELECT * FROM "runs" [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NameError (undefined local variable or method `result' for #<Class:0xa27bbac>):
+  app/models/run.rb:20:in `get_run'
+  app/controllers/runs_controller.rb:6:in `index'
+  <internal:prelude>:8:in `synchronize'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (61.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RunsController#index (for 127.0.0.1 at 2010-08-01 18:36:21) [GET]
+  [4;35;1mRun Load (0.4ms)[0m   [0mSELECT * FROM "runs" [0m
+Rendering template within layouts/runs
+Rendering runs/index
+Completed in 1602ms (View: 2, DB: 0) | 200 OK [http://localhost/runs]
+
+
+Processing RunsController#index (for 127.0.0.1 at 2010-08-01 18:36:59) [GET]
+  [4;36;1mRun Load (0.4ms)[0m   [0;1mSELECT * FROM "runs" [0m
+Rendering template within layouts/runs
+Rendering runs/index
+Completed in 492ms (View: 2, DB: 0) | 200 OK [http://localhost/runs]
+
+
+Processing RunsController#index (for 127.0.0.1 at 2010-08-01 18:38:54) [GET]
+  [4;35;1mRun Load (0.4ms)[0m   [0mSELECT * FROM "runs" [0m
+Rendering template within layouts/runs
+Rendering runs/index
+Completed in 735ms (View: 2, DB: 0) | 200 OK [http://localhost/runs]
+
+
+Processing RunsController#index (for 127.0.0.1 at 2010-08-01 18:39:05) [GET]
+  [4;36;1mRun Load (0.4ms)[0m   [0;1mSELECT * FROM "runs" [0m
+Rendering template within layouts/runs
+Rendering runs/index
+Completed in 646ms (View: 2, DB: 0) | 200 OK [http://localhost/runs]
+
+
+Processing RunsController#index (for 127.0.0.1 at 2010-08-01 18:39:13) [GET]
+  [4;35;1mRun Load (0.4ms)[0m   [0mSELECT * FROM "runs" [0m
+Rendering template within layouts/runs
+Rendering runs/index
+Completed in 448ms (View: 2, DB: 0) | 200 OK [http://localhost/runs]
+
+
+Processing RunsController#index (for 127.0.0.1 at 2010-08-01 18:39:30) [GET]
+  [4;36;1mRun Load (0.4ms)[0m   [0;1mSELECT * FROM "runs" [0m
+Rendering template within layouts/runs
+Rendering runs/index
+Completed in 495ms (View: 13, DB: 0) | 200 OK [http://localhost/runs]
+
+
+Processing RunsController#index (for 127.0.0.1 at 2010-08-01 18:39:43) [GET]
+
+SyntaxError (/home/nick/prog/running/app/models/run.rb:18: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+        result << el.name + ' ' + el.value "<br />"
+                                            ^):
+  app/controllers/runs_controller.rb:5:in `index'
+  <internal:prelude>:8:in `synchronize'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (70.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RunsController#index (for 127.0.0.1 at 2010-08-01 18:39:52) [GET]
+  [4;35;1mRun Load (0.4ms)[0m   [0mSELECT * FROM "runs" [0m
+
+NoMethodError (undefined method `value' for <distance> ... </>:REXML::Element):
+  app/models/run.rb:18:in `block (2 levels) in get_run'
+  /usr/lib/ruby/1.9.1/rexml/element.rb:906:in `block in each'
+  /usr/lib/ruby/1.9.1/rexml/xpath.rb:64:in `each'
+  /usr/lib/ruby/1.9.1/rexml/xpath.rb:64:in `each'
+  /usr/lib/ruby/1.9.1/rexml/element.rb:906:in `each'
+  app/models/run.rb:17:in `block in get_run'
+  /usr/lib/ruby/1.9.1/open-uri.rb:150:in `open_uri'
+  /usr/lib/ruby/1.9.1/open-uri.rb:669:in `open'
+  /usr/lib/ruby/1.9.1/open-uri.rb:33:in `open'
+  app/models/run.rb:14:in `get_run'
+  app/controllers/runs_controller.rb:6:in `index'
+  <internal:prelude>:8:in `synchronize'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (66.3ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RunsController#index (for 127.0.0.1 at 2010-08-01 18:40:24) [GET]
+  [4;36;1mRun Load (0.4ms)[0m   [0;1mSELECT * FROM "runs" [0m
+Rendering template within layouts/runs
+Rendering runs/index
+Completed in 440ms (View: 2, DB: 0) | 200 OK [http://localhost/runs]
+
+
+Processing RunsController#index (for 127.0.0.1 at 2010-08-01 18:54:30) [GET]
+  [4;35;1mRun Load (0.4ms)[0m   [0mSELECT * FROM "runs" [0m
+Rendering template within layouts/runs
+Rendering runs/index
+Completed in 505ms (View: 2, DB: 0) | 200 OK [http://localhost/runs]
+
+
+Processing RunsController#index (for 127.0.0.1 at 2010-08-01 18:54:37) [GET]
+  [4;36;1mRun Load (0.4ms)[0m   [0;1mSELECT * FROM "runs" [0m
+Rendering template within layouts/runs
+Rendering runs/index
+Completed in 491ms (View: 2, DB: 0) | 200 OK [http://localhost/runs]
+
+
+Processing RunsController#index (for 127.0.0.1 at 2010-08-01 19:05:01) [GET]
+
+SyntaxError (/home/nick/prog/running/app/models/run.rb:38: syntax error, unexpected $end, expecting keyword_end):
+  app/controllers/runs_controller.rb:5:in `index'
+  <internal:prelude>:8:in `synchronize'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (113.5ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RunsController#index (for 127.0.0.1 at 2010-08-01 19:05:14) [GET]
+  [4;35;1mRun Load (1.4ms)[0m   [0mSELECT * FROM "runs" [0m
+Rendering template within layouts/runs
+Rendering runs/index
+Completed in 515ms (View: 13, DB: 1) | 200 OK [http://localhost/runs]
+
+
+Processing RunsController#index (for 127.0.0.1 at 2010-08-01 19:05:34) [GET]
+  [4;36;1mRun Load (0.4ms)[0m   [0;1mSELECT * FROM "runs" [0m
+Rendering template within layouts/runs
+Rendering runs/index
+Completed in 526ms (View: 2, DB: 0) | 200 OK [http://localhost/runs]
+
+
+Processing RunsController#index (for 127.0.0.1 at 2010-08-01 19:06:24) [GET]
+  [4;35;1mRun Load (0.4ms)[0m   [0mSELECT * FROM "runs" [0m
+Rendering template within layouts/runs
+Rendering runs/index
+Completed in 536ms (View: 2, DB: 0) | 200 OK [http://localhost/runs]
+
+
+Processing RunsController#index (for 127.0.0.1 at 2010-08-01 19:06:50) [GET]
+  [4;36;1mRun Load (0.4ms)[0m   [0;1mSELECT * FROM "runs" [0m
+Rendering template within layouts/runs
+Rendering runs/index
+Completed in 493ms (View: 2, DB: 0) | 200 OK [http://localhost/runs]
+
+
+Processing RunsController#index (for 127.0.0.1 at 2010-08-01 19:07:10) [GET]
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NameError (undefined local variable or method `user_id' for #<Class:0xa822d0c>):
+  app/models/run.rb:27:in `get_all_runs'
+  app/controllers/runs_controller.rb:5:in `index'
+  <internal:prelude>:8:in `synchronize'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (60.8ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RunsController#index (for 127.0.0.1 at 2010-08-01 19:07:23) [GET]
+Rendering template within layouts/runs
+Rendering runs/index
+
+ActionView::TemplateError (undefined method `each' for #<String:0x9e841f0>) on line #9 of app/views/runs/index.html.erb:
+6:     <th>Avg pace</th>
+7:   </tr>
+8: 
+9: <% @runs.each do |run| %>
+10:   <tr>
+11:     <td><%=h run.distance %></td>
+12:     <td><%=h run.avg_pace %></td>
+
+    app/views/runs/index.html.erb:9
+    app/controllers/runs_controller.rb:8:in `index'
+    <internal:prelude>:8:in `synchronize'
+    /usr/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    /usr/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    /usr/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (85.3ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RunsController#index (for 127.0.0.1 at 2010-08-01 19:08:19) [GET]
+Rendering template within layouts/runs
+Rendering runs/index
+
+ActionView::TemplateError (undefined method `distance' for "6.264":String) on line #11 of app/views/runs/index.html.erb:
+8: 
+9: <% @runs.each do |run| %>
+10:   <tr>
+11:     <td><%=h run.distance %></td>
+12:     <td><%=h run.avg_pace %></td>
+13:     <td><%= link_to 'Show', run %></td>
+14:     <td><%= link_to 'Edit', edit_run_path(run) %></td>
+
+    app/views/runs/index.html.erb:11:in `block in _run_erb_app47views47runs47index46html46erb'
+    app/views/runs/index.html.erb:9:in `each'
+    app/views/runs/index.html.erb:9
+    app/controllers/runs_controller.rb:8:in `index'
+    <internal:prelude>:8:in `synchronize'
+    /usr/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    /usr/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    /usr/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (86.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RunsController#index (for 127.0.0.1 at 2010-08-01 19:09:23) [GET]
+
+NoMethodError (undefined method `avg_page=' for #<Run:0xad07740>):
+  app/models/run.rb:35:in `block (2 levels) in get_all_runs'
+  /usr/lib/ruby/1.9.1/rexml/element.rb:906:in `block in each'
+  /usr/lib/ruby/1.9.1/rexml/xpath.rb:64:in `each'
+  /usr/lib/ruby/1.9.1/rexml/xpath.rb:64:in `each'
+  /usr/lib/ruby/1.9.1/rexml/element.rb:906:in `each'
+  app/models/run.rb:32:in `block in get_all_runs'
+  /usr/lib/ruby/1.9.1/open-uri.rb:150:in `open_uri'
+  /usr/lib/ruby/1.9.1/open-uri.rb:669:in `open'
+  /usr/lib/ruby/1.9.1/open-uri.rb:33:in `open'
+  app/models/run.rb:30:in `get_all_runs'
+  app/controllers/runs_controller.rb:5:in `index'
+  <internal:prelude>:8:in `synchronize'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (69.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RunsController#index (for 127.0.0.1 at 2010-08-01 19:09:32) [GET]
+Rendering template within layouts/runs
+Rendering runs/index
+
+ActionView::TemplateError (edit_run_url failed to generate from {:controller=>"runs", :action=>"edit", :id=>#<Run id: nil, distance: 6.264, avg_pace: 1.0, created_at: nil, updated_at: nil>}, expected: {:controller=>"runs", :action=>"edit"}, diff: {:id=>#<Run id: nil, distance: 6.264, avg_pace: 1.0, created_at: nil, updated_at: nil>}) on line #14 of app/views/runs/index.html.erb:
+11:     <td><%=h run.distance %></td>
+12:     <td><%=h run.avg_pace %></td>
+13:     <td><%= link_to 'Show', run %></td>
+14:     <td><%= link_to 'Edit', edit_run_path(run) %></td>
+15:     <td><%= link_to 'Destroy', run, :confirm => 'Are you sure?', :method => :delete %></td>
+16:   </tr>
+17: <% end %>
+
+    (eval):17:in `edit_run_path'
+    app/views/runs/index.html.erb:14:in `block in _run_erb_app47views47runs47index46html46erb'
+    app/views/runs/index.html.erb:9:in `each'
+    app/views/runs/index.html.erb:9
+    app/controllers/runs_controller.rb:8:in `index'
+    <internal:prelude>:8:in `synchronize'
+    /usr/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    /usr/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    /usr/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (158.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RunsController#index (for 127.0.0.1 at 2010-08-01 19:10:05) [GET]
+Rendering template within layouts/runs
+Rendering runs/index
+Completed in 1133ms (View: 15, DB: 0) | 200 OK [http://localhost/runs]
+
+
+Processing RunsController#index (for 127.0.0.1 at 2010-08-01 19:11:15) [GET]
+  [4;36;1mRun Load (0.5ms)[0m   [0;1mSELECT * FROM "runs" [0m
+Rendering template within layouts/runs
+Rendering runs/index
+Completed in 1150ms (View: 12, DB: 1) | 200 OK [http://localhost/runs]
+
+
+Processing RunsController#index (for 127.0.0.1 at 2010-08-01 19:11:24) [GET]
+  [4;35;1mRun Load (0.4ms)[0m   [0mSELECT * FROM "runs" [0m
+Rendering template within layouts/runs
+Rendering runs/index
+Completed in 1031ms (View: 2, DB: 0) | 200 OK [http://localhost/runs]
+
+
+Processing RunsController#index (for 127.0.0.1 at 2010-08-01 19:11:39) [GET]
+  [4;36;1mRun Load (0.4ms)[0m   [0;1mSELECT * FROM "runs" [0m
+Rendering template within layouts/runs
+Rendering runs/index
+Completed in 957ms (View: 13, DB: 0) | 200 OK [http://localhost/runs]

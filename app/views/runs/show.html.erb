@@ -1,0 +1,13 @@
+<p>
+  <b>Distance:</b>
+  <%=h @run.distance %>
+</p>
+
+<p>
+  <b>Avg pace:</b>
+  <%=h @run.avg_pace %>
+</p>
+
+
+<%= link_to 'Edit', edit_run_path(@run) %> |
+<%= link_to 'Back', runs_path %>

@@ -1,0 +1,22 @@
+<h1>Listing runs</h1>
+
+<table>
+  <tr>
+    <th>Distance</th>
+    <th>Avg pace</th>
+  </tr>
+
+<% @runs.each do |run| %>
+  <tr>
+    <td><%=h run.distance %></td>
+    <td><%=h run.avg_pace %></td>
+    <td><%= link_to 'Show', run %></td>
+    <td><%= link_to 'Edit', edit_run_path(run) %></td>
+    <td><%= link_to 'Destroy', run, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New run', new_run_path %>

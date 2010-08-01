@@ -1,0 +1,20 @@
+<h1>Editing run</h1>
+
+<% form_for(@run) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :distance %><br />
+    <%= f.text_field :distance %>
+  </p>
+  <p>
+    <%= f.label :avg_pace %><br />
+    <%= f.text_field :avg_pace %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @run %> |
+<%= link_to 'Back', runs_path %>
